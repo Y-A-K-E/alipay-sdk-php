@@ -58,7 +58,7 @@ https://github.com/Abbotton/alipay-sdk-php
 1. Composer 安装。
 
     ```bash
-    composer require Y-A-K-E/alipay-sdk:2.0.1
+    composer require y-a-k-e/alipay-sdk:2.0.1
     ```
 
 2. 创建 `AlipayKeyPair` 实例。

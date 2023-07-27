@@ -1,5 +1,5 @@
 {
-	"name": "Y-A-K-E/alipay-sdk",
+	"name": "y-a-k-e/alipay-sdk",
 	"description": "支付宝（蚂蚁金服）开放平台第三方 PHP SDK，基于官方最新版本。改,适配php8.1",
 	"type": "library",
 	"license": "MIT",
