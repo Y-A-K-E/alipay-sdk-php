@@ -152,8 +152,15 @@ abstract class AlipayKey implements Serializable
     {
         return $this->asString();
     }
-
+    public function __serialize()
+    {
+        return $this->asString();
+    }
     public function unserialize($data)
+    {
+        $this->load($data);
+    }
+    public function __unserialize($data)
     {
         $this->load($data);
     }
