@@ -1,11 +1,3 @@
-## 原来作者
-
-https://github.com/Abbotton/alipay-sdk-php
-
-我只调整了PHP8.1下报错问题.
-其他都是他代码.
-
-
 <img src="https://i.loli.net/2018/07/24/5b56e980b155e.png" width="40px" height="40px"> Alipay SDK for PHP
 ==========
 
@@ -58,7 +50,7 @@ https://github.com/Abbotton/alipay-sdk-php
 1. Composer 安装。
 
     ```bash
-    composer require y-a-k-e/alipay-sdk:2.0.1
+    composer require abbotton/alipay-sdk
     ```
 
 2. 创建 `AlipayKeyPair` 实例。
@@ -69,7 +61,7 @@ https://github.com/Abbotton/alipay-sdk-php
         __DIR__ . '/private.pem',
         __DIR__ . '/public.pem'
     );
-
+   
    // 通过密钥字符串创建
    $privateKey = '-----BEGIN RSA PRIVATE KEY-----
    // ......
@@ -103,13 +95,13 @@ https://github.com/Abbotton/alipay-sdk-php
         'type' => 'TRANSFER',
         'page_no' => 1
    ];
-
+   
    // 通过工厂类创建
     $request = (new \Alipay\AlipayRequestFactory)->create('alipay.data.bill.transfer.query', [
         'biz_content' => $bizContent,
         // ...
     ]);
-
+   
    // 直接创建
    $request = (new \Alipay\Request\AlipayRequest())
         ->setApiMethodName('alipay.data.bill.transfer.query')
